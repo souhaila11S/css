@@ -1,0 +1,113 @@
+/* Style général */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff; /* blanc */
+  color: #a95de0; /* violet foncé */
+  margin: 0;
+  padding: 0;
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  background: #8f64b8; /* banafsaji */
+  color: #f2eaea;
+  padding: 30px;
+  border-bottom: 4px solid #b62f63; /* jaune doré */
+}
+
+header img {
+  border-radius: 50%;
+  border: 5px solid #109a4e;
+  margin-top: 10px;
+}
+
+/* Contenu principal */
+main {
+  padding: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Titres */
+h1, h2 {
+  color: #0cb30f; /* violet foncé */
+}
+
+/* Listes stylées */
+ul {
+  list-style: none;
+  padding: 0;
+  display:grid ;
+  
+  gap: 15px;
+  margin-top: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px , 1fr))
+}
+
+ul li {
+  background: #90a7c9; /* blanc-violet clair */
+  border: 9px solid #ffd700;
+  border-radius: 12px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+ul li:hover {
+  background: #d70e11; 
+  transform: scale(1.05);
+}
+
+ul li::before {
+  content: "⭐ ";
+}
+
+/* Tableau des compétences */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 2px solid #ffd700;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #8a2be2; /* banafsaji */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  background-color: #fff8dc; /* jaune clair */
+  font-weight: 500;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  background: #8a2be2;
+  color: white;
+  padding: 15px;
+}
+
+/* Liens */
+a {
+  color: #4b0082;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

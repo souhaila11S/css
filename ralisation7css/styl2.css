@@ -2,26 +2,26 @@
 body {
     font-family:"Poppins", sans-serif;
     background:beige; 
-    margin: 0;
+    margin:0;
     padding: 0;
   }
   .container {
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
   }
-  
   
   
   header {
     text-align: center;
     background-color: rgb(233, 187, 146);
-    padding: 15px;
+    padding: 10px;
+    font-size: 14px;
+   
   }
   
   header img {
     border-radius: 50%;
     border: 3px solid #1a1919;
-    margin-top: 10px;
     width: 150px;
     height: 150px;
   }
@@ -99,7 +99,22 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
+  header nav{
+    display: none;
+  }
   
   a:hover {
     text-decoration: underline;
   } 
+  @media (max-width:600px) {
+   header img {
+    width: 100px;
+    height: 100px;
+   }
+   header nav{
+    display: block;
+   }
+   footer nav{
+    display: none;
+   }
+  }

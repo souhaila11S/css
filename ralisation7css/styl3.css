@@ -1,93 +1,108 @@
-body{
-    font-family: "poppins",sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
     background-color: beige;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
-.container{
-    max-width: 700px;
+
+.container {
+    max-width: 1200px;
     margin: auto;
 }
-h1{
-    color:rgb(212, 140, 63);
-   text-align: center;
+
+h1 {
+    color: rgb(212, 140, 63);
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-ul{
-   margin-top: 40px;
-   display: grid;
-   gap: 4px;
-   width: 50%;
 
+ul {
+    margin-top: 40px;
+    display: grid;
+    gap: 4px;
+    width: 80%; 
+    margin: auto;
 }
-ul li{
-   
+
+ul li {
     padding: 10px;
     border-radius: 10px;
-    margin-right: 300px;
-    width: 50%;
-}
-legend{
-    color: rgb(6, 6, 5);
 
+}
+
+legend {
+    color: rgb(6, 6, 5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-fieldset{
+
+fieldset {
     margin-top: 40px;
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
 }
+
 input {
-    padding: 10px ;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
-button{
 
-    margin: auto;
-    margin-left: 250px;
-    padding: 9px;
-    background-color:rgb(255, 211, 153);
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgb(255, 211, 153);
     border: 2px solid rgb(22, 22, 21);
-   width: 30%;
-   border-radius: 15px;
-   font-weight:bold;
-
+    width: 40%;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(244, 167, 67);
-    
     transform: scale(1.05);
     transition: 0.3s ease;
-    
-    
-
 }
-nav{
-    margin-top: 50px;
+
+.spas {
     border: 3px solid;
     padding: 15px;
     border-radius: 30px;
-    width: 50%;
-    margin: auto;
-   margin-top: 50px;
-   background-color: rgb(255, 211, 153);
-   text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(255, 211, 153);
+    text-align: center;
+}
 
-   }
-   
-   
-   a{
+a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
-   
-   }
-   a:hover{
-    text-decoration: underline;
-   
 }
-.copy{
+
+a:hover {
+    text-decoration: underline;
+}
+
+.copy {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    fieldset {
+        grid-template-columns: 1fr; }
+    ul {
+        width: 100%;
+    }
+    button {
+        width: 70%;
+    }
+    nav {
+        width: 95%;
+    }
+}
+
+
 

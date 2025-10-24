@@ -1,48 +1,86 @@
-body{
-    font-family: "poppins",sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
     background-color: beige;
-    margin: 0%;
-    padding: 0%;
-   
-}
-.container{
-    max-width: 700px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
     margin: auto;
-}
-h1{
+    padding: 15px;
+  }
+  
+  h1 {
     text-align: center;
-    margin-bottom: 60px;
-}
-.propos{
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .propos {
     text-align: center;
     border: 2px solid;
     border-radius: 10px;
     background-color: rgb(233, 187, 146);
-}
-nav{
-    margin-top: 50px;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  nav {
     border: 3px solid;
     padding: 15px;
     border-radius: 30px;
-    width: 50%;
-    margin: auto;
-   margin-top: 50px;
-   background-color: rgb(235, 214, 190);
-   text-align: center;
-
-
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(255, 211, 153);
+    text-align: center;
 }
-a{
+  
+  a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-   
-}
-a:hover{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    background-color: rgb(233, 187, 146);
     text-decoration: underline;
-
-}
-footer{
+  }
+  
+  footer {
     text-align: center;
     margin-top: 20px;
-}
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    nav {
+      width: 95%;
+      padding: 8px;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+  
+    .propos {
+      font-size: 15px;
+      padding: 10px;
+    }
+  
+    a {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    footer {
+      font-size: 13px;
+    }
+  }
+  
